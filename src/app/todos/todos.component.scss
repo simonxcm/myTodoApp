@@ -76,6 +76,18 @@
   bottom: 0;
   right: 5px;
   display: flex;
+  //hide by default
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2px);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+}
+
+.todo-item:hover .todo-controls-box {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.4s;
+  transform: translateY(0);
 }
 
 .todo-controls-box .todo-control-button {
